@@ -20,7 +20,7 @@
   --h4-font-size: 2rem;
   --h5-font-size: 1.375rem;
 
-  --p-font-size: 1.125rem;
+  --p-font-size: 1.3rem;
 
   --btn-border: 0.5rem;
 
@@ -112,6 +112,12 @@ h6 {
   padding-left: var(--gutter-x);
   padding-right: var(--gutter-x);
 }
+@media screen and (max-width: 48em) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 .btn {
   cursor: pointer;
   padding: 0.75rem 1.5rem;
@@ -133,22 +139,26 @@ h6 {
   display: none;
 }
 .toggle-btn > div {
-  width: 2rem;
-  height: 0.2rem;
+  width: 25px;
+  height: 2px;
   background-color: var(--dark-color);
   user-select: none;
-  margin: 5px;
+  margin: 5px 0;
+  display: block;
+  position: relative;
   transition: all 0.3s ease;
 }
 .toggle-btn__line-1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg);
+  top: 6px;
 }
 .toggle-btn__line-2 {
   opacity: 0;
   transition: none;
 }
 .toggle-btn__line-3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg);
+  top: -8px;
 }
 
 /*end custom element,overall*/
@@ -156,8 +166,10 @@ h6 {
 /*navbar */
 
 .navbar {
+  border-bottom: 1px solid var(--p-color);
   position: relative;
-  padding: 1rem var(--gutter-x);
+  z-index: 10;
+  padding: 1rem 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,7 +182,17 @@ h6 {
 .navbar-brand:hover {
   color: var(--primary-color);
 }
-
+.sticky .navbar {
+  background-color: var(--white-color);
+  position: fixed;
+  width: 100%;
+}
+.sticky .navbar-list__item > a {
+  color: var(--dark-color);
+}
+.sticky .navbar-brand {
+  color: var(--dark-color);
+}
 .navbar-list {
   list-style-type: none;
   display: flex;
@@ -195,18 +217,35 @@ h6 {
     font-size: 1.6rem;
   }
 }
+
 @media screen and (max-width: 48em) {
   .toggle-btn {
     display: block;
     margin-left: 0.5rem;
   }
-  .navbar-list {
-    display: none;
+
+  .show .navbar-list {
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+
+    z-index: 10;
+    top: 5rem;
+    left: 0;
+    width: 100vw;
+    background-color: var(--white-color);
+  }
+  .show .navbar-list__item {
+    margin-left: 1rem;
+    padding: 1rem 0rem;
+  }
+  .show .navbar-list__item > a {
+    font-size: 1.3rem;
+    color: var(--dark-color);
   }
   .navbar {
-    justify-content: space-between;
-    padding-left: var(--gutter-x);
-    padding-right: var(--gutter-x);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .navbar-brand {
     color: var(--dark-color);
@@ -229,7 +268,7 @@ h6 {
   position: relative;
   width: 100%;
   top: -5rem;
-  z-index: -20;
+  z-index: 2;
   height: 37.5rem;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -242,6 +281,7 @@ h6 {
 .hero__text {
   flex: 0 0 auto;
   width: 60%;
+  cursor: pointer;
 }
 .hero__text > h1 {
   color: var(--white-color);
@@ -267,17 +307,20 @@ h6 {
 .hero__btn {
   background-color: var(--white-color);
   border-radius: var(--btn-border);
+  cursor: pointer;
   display: flex;
   justify-content: center;
   padding: 0.4rem 1rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   width: fit-content;
   align-items: center;
+}
+.hero__btn:hover {
+  color: var(--primary-color);
 }
 @media screen and (max-width: 48em) {
   .hero {
     justify-content: space-between;
-    padding-left: var(--gutter-x);
     height: 32rem;
   }
   .hero__text {
