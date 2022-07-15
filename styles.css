@@ -30,7 +30,7 @@
   --tab-land: 62em;
   --desktop: 80em;
 
-  --gutter-x: 4.5rem;
+  --gutter-x: 6rem;
 }
 html {
   font-family: var(--body-font-family);
@@ -183,7 +183,7 @@ p {
   border-bottom: 1px solid var(--p-color);
   position: relative;
   z-index: 10;
-  padding: 1rem 4.5rem;
+  padding: 1rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -286,7 +286,7 @@ p {
   width: 100%;
   top: -5rem;
   z-index: 2;
-  height: 37.5rem;
+  height: 40rem;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -355,10 +355,11 @@ p {
 
 /*end hero section*/
 /*section about */
-
-.section-about {
-  padding: 2;
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .about-heading {
   align-items: flex-end;
 }
@@ -444,3 +445,62 @@ p {
   }
 }
 /*end section about*/
+/*start section services*/
+.service-container {
+  padding: 3rem 0;
+}
+.section-service {
+  background-color: var(--section-bg-color);
+}
+.section-service h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+.service-img {
+  flex: 0 0 auto;
+  width: 33.333333333333%;
+  height: 100%;
+}
+.service-img img {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  padding: 1.2rem;
+}
+.service-box {
+  flex: 0 0 auto;
+  width: 33.333333333333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  position: relative;
+  text-align: center;
+  background-color: var(--white-color);
+}
+.service-box p {
+  margin-top: 0.5rem;
+}
+.service-box button {
+  margin-top: 1.5rem;
+}
+.bg-green {
+  background-color: #198754;
+}
+.bg-blue {
+  background-color: rgb(13, 110, 253);
+}
+.bg-yellow {
+  background-color: rgb(255, 193, 7);
+}
+@media screen and (max-width: 1064px) {
+  .service-box {
+    width: 100%;
+  }
+
+  .service-img {
+    width: 100%;
+  }
+}
