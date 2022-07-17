@@ -6,8 +6,8 @@ const tabs = document.querySelectorAll('.tab-link');
 const tabContents = document.querySelectorAll('.tab-content');
 const accordions = document.querySelectorAll('.accordion');
 const section = document.querySelectorAll('section');
-const navbarItems = document.querySelectorAll('.navbar-list__item');
-console.log(navbarItems);
+const navbarItems = document.querySelectorAll('.navbar-list__item a');
+
 const resetTabs = (idTab) => {
   tabs.forEach((tab) => {
     if (tab.dataset.value !== idTab) tab.classList.remove('active');
@@ -16,7 +16,8 @@ const resetTabs = (idTab) => {
 };
 const activeNavItem = (idTab) => {
   navbarItems.forEach((item) => {
-    if (item.id !== idTab) item.classList.remove('active');
+    if (item.getAttribute('href').substring(1) !== idTab)
+      item.classList.remove('active');
     else item.classList.add('active');
   });
 };
@@ -30,16 +31,14 @@ resetTabs('introduction');
 resetTabContents('introduction');
 toggleButton.addEventListener('click', (e) => {
   e.preventDefault();
-
   toggleButtonLine[0].classList.toggle('toggle-btn__line-1');
   toggleButtonLine[1].classList.toggle('toggle-btn__line-2');
   toggleButtonLine[2].classList.toggle('toggle-btn__line-3');
   navBarMenu.classList.toggle('show');
 });
-window.addEventListener('scroll', function (event) {
+window.addEventListener('scroll', function () {
   let top = this.scrollY;
-
-  if (top > 100) {
+  if (top > 0) {
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');
@@ -65,16 +64,23 @@ accordions.forEach((acc) =>
     }
   })
 );
-window.onscroll = () => {
+navbarItems.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    document
+      .getElementById(item.getAttribute('href').substring(1))
+      .scrollIntoView();
+    activeNavItem(item.getAttribute('href').substring(1));
+  });
+});
+window.addEventListener('scroll', () => {
   section.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop;
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
-
-    if (top >= offset && top < offset + height) {
-      console.log(id);
+    if (top >= offset - 100 && top < offset + height) {
       activeNavItem(id);
     }
   });
-};
+});

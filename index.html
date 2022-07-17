@@ -1,457 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
-    <!--Link fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page</title>
+  <!--Link fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,600;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="index.js" defer></script>
-  </head>
-  <body>
-    <!--Start header section-->
-    <header class="header">
-      <!--Start navbar-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      <div class="navbar-area">
-        <nav class="navbar">
-          <a href="index.html" class="navbar-brand">
-            <i class="bi-layers"></i> Tween
-          </a>
-          <div class="navbar-menu">
-            <ul class="navbar-list">
-              <li class="navbar-list__item" id="hero"><a href="#hero" >Home</a></li>
-              <li class="navbar-list__item " id="about"><a href="#about" >About</a></li>
-              <li class="navbar-list__item" id="service"><a href="#service" >Services</a></li>
-              <li class="navbar-list__item" id="project"><a href="#project" >Our Work</a></li>
-              <li class="navbar-list__item" id="pricing"><a href="#pricing" >Pricing</a></li>
-              <li class="navbar-list__item" id="form"><a href="#form">Contact</a></li>
-            </ul>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="index.js" defer></script>
+  <base href=".">
+</head>
+
+<body>
+  <!--Start header section-->
+  <header class="header" id="hero">
+    <!--Start navbar-->
+
+    <div class="navbar-area">
+      <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+          <i class="bi-layers"></i> Tween
+        </a>
+        <div class="navbar-menu">
+          <ul class="navbar-list">
+            <li class="navbar-list__item"><a href="#hero">Home</a></li>
+            <li class="navbar-list__item "><a href="#about">About</a></li>
+            <li class="navbar-list__item"><a href="#service" >Services</a></li>
+            <li class="navbar-list__item"><a href="#project" >Our Work</a></li>
+            <li class="navbar-list__item"><a href="#pricing" >Pricing</a></li>
+            <li class="navbar-list__item"><a href="#form">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-btn">
+          <button class="btn">Download <i class="bi-download ms-2"></i></button>
+          <div class="toggle-btn">
+            <div class="toggle-btn__line"></div>
+            <div class="toggle-btn__line"></div>
+            <div class="toggle-btn__line"></div>
           </div>
-          <div class="navbar-btn">
-            <button class="btn">Download <i class="bi-download ms-2"></i></button>
-            <div class="toggle-btn">
-              <div class="toggle-btn__line"></div>
-              <div class="toggle-btn__line"></div>
-              <div class="toggle-btn__line"></div>
-            </div>
-          </div>
-        </nav>
+        </div>
+      </nav>
+    </div>
+    <!--End navbar-->
+    <!--Custom open/close button-->
+
+    <!--Start hero section-->
+    <section id="hero" class="container section-hero">
+      <div class="hero" id="home">
+        <div class="hero__text">
+          <h1>We are ready to serve for your digital marketing</h1>
+          <a href="https://www.youtube.com/watch?v=YAXTn0E-Zgo&list=RDK_kuLrdu9Wg&index=25" target="_blank"
+            class="hero__btn">
+            <i class="bi bi-play play-icon"></i>
+            <small>3:22 Minutes</small></a>
+        </div>
+        <div class="hero-fake"></div>
+        <div class="hero-fake"></div>
       </div>
-      <!--End navbar-->
-      <!--Custom open/close button-->
+    </section>
 
-      <!--Start hero section-->
-      <section class="container section-hero" id="hero">
-        <div class="hero" id="home">
-          <div class="hero__text">
-            <h1>We are ready to serve for your digital marketing</h1>
-            <a
-              href="https://www.youtube.com/watch?v=YAXTn0E-Zgo&list=RDK_kuLrdu9Wg&index=25"
-              target="_blank"
-              class="hero__btn"
-            >
-              <i class="bi bi-play play-icon"></i>
-              <small>3:22 Minutes</small></a
-            >
-          </div>
-          <div class="hero-fake"></div>
-          <div class="hero-fake"></div>
-        </div>
-      </section>
+    <!--End hero section-->
+  </header>
+  <!--End header section -->
 
-      <!--End hero section-->
-    </header>
-    <!--End header section -->
-
-    <!--Main section-->
-    <main>
-      <!--Section about-->
-      <section class="section-about section-padding" id="about">
-        <div class="container">
-          <div class="row about-heading">
-            <div class="col-lg-6">
-              <h2>Digital Happiness</h2>
-            </div>
-            <div class="col-lg-6">
-              <div class="tab">
-                <button class="tab-link active" data-value="introduction">
-                  Introduction</button
-                ><button class="tab-link" data-value="profile">Profile</button
-                ><button class="tab-link" data-value="faq">FAQs</button>
-              </div>
-            </div>
+  <!--Main section-->
+  <main>
+    <!--Section about-->
+    <section id="about" class="section-about section-padding">
+      <div class="container">
+        <div class="row about-heading">
+          <div class="col-lg-6">
+            <h2>Digital Happiness</h2>
           </div>
-          <div class="row tab-content show" id="introduction">
-            <div class="col-lg-6 tab-content__img">
-              <picture>
-                <img
-                  src="images/webpage-browser-digital-icon-symbols-concept.jpg"
-                  class="img-fluid"
-                  alt="image"
-              /></picture>
-            </div>
-            <div class="col-lg-6 tab-content__des">
-              <h3>Brand Creation</h3>
-              <p>
-                We want you to be happy with our Tween Agency services. Our
-                digital agency is ready to serve you to grow your business in a
-                healthy way.
-              </p>
-              <p>
-                This is Bootstrap 5 HTML template for your website provided by
-                Tooplate. You can download, edit and use this layout for your
-                company website.
-              </p>
-            </div>
-          </div>
-          <div class="row tab-content hide" id="profile" >
-            <div class="col-lg-6 tab-content__des">
-              <h3>Marie Smarty, CEO</h3>
-              <p>
-                Our priority is your happiness working together with us. We
-                guarantee you the best service quality from us. Feel free to
-                talk to us via email, twitter, or linkedin.
-              </p>
-            </div>
-            <div class="col-lg-6 tab-content__img">
-              <picture>
-                <img src="images/maria.jpg" class="img-fluid" alt="image"
-              /></picture>
-            </div>
-          </div>
-          <div class="row tab-content hide" id="faq">
-            <div class="col-lg-6 tab-content__img">
-              <picture>
-                <img src="images/php.jpg" class="img-fluid" alt="image"
-              /></picture>
-            </div>
-            <div class="col-lg-6 tab-content__des">
-              <h3>Frequenlty Asked Questions</h3>
-              <div>
-                <div class="accordion">
-                  <p>What is Tween Agency?</p>
-                  <i class="bi bi-chevron-down"></i>
-                </div>
-                <div class="panel">
-                  <p>
-                    <strong>Tween Agency</strong> is free HTML template powered
-                    by Bootstrap 5 CSS framework. This means you can use all
-                    standard CSS classes provided by Bootstrap version 5 to
-                    customize your CSS layout.
-                  </p>
-                  <p>
-                    You are allowed to use it for your clients. You are not
-                    allowed to redistribute this
-                    <strong>template ZIP file</strong> on any other template
-                    website. Please contact Tooplate for more info.
-                  </p>
-                </div>
-                <div class="accordion">
-                  <p>What are available services?</p>
-                  <i class="bi bi-chevron-down"></i>
-                </div>
-                <div class="panel">
-                  <p>
-                    We provide full digital marketing services for all various
-                    aspects of your company's web presence and social medias.
-                    You have 100% peace of mind for your company by working with
-                    us.
-                  </p>
-                </div>
-                <div class="accordion">
-                  <p>How many successful projects?</p>
-                  <i class="bi bi-chevron-down"></i>
-                </div>
-                <div class="panel">
-                  <p>
-                    We have over 280+ successful projects for different
-                    companies. There are great experiences of working together
-                    with different clients all over the world.
-                  </p>
-                </div>
-              </div>
+          <div class="col-lg-6">
+            <div class="tab">
+              <button class="tab-link active" data-value="introduction">
+                Introduction</button><button class="tab-link" data-value="profile">Profile</button><button
+                class="tab-link" data-value="faq">FAQs</button>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section-service section-padding" id="service">
-        <div class="container">
-          <div class="row">
-            <h2 class="mx-auto">Digital Services</h2>
+        <div class="row tab-content show" id="introduction">
+          <div class="col-lg-6 tab-content__img">
+            <picture>
+              <img src="images/webpage-browser-digital-icon-symbols-concept.jpg" class="img-fluid" alt="image" />
+            </picture>
           </div>
-          <div class="row service-container">
-            <div class="service-img bg-green">
-              <picture>
-                <img
-                  src="images/services/undraw_content_team_3epn.svg"
-                  class="img-fluid"
-                />
-              </picture>
-            </div>
-            <div class="service-box">
-              <h4>UI Design</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing industry</p>
-              <button class="btn">Learn more</button>
-            </div>
-            <div class="service-img bg-blue">
-              <picture>
-                <img
-                  src="images/services/undraw_Online_page_re_lhgx.svg"
-                  class="img-fluid"
-                />
-              </picture>
-            </div>
-            <div class="service-box">
-              <h4>Marketing</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing industry</p>
-              <button class="btn">Learn more</button>
-            </div>
-            <div class="service-img bg-yellow">
-              <picture>
-                <img
-                  src="images/services/undraw_online_transactions_02ka.svg"
-                  class="img-fluid"
-                />
-              </picture>
-            </div>
-            <div class="service-box">
-              <h4>ECommerce</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing industry</p>
-              <button class="btn">Learn more</button>
-            </div>
+          <div class="col-lg-6 tab-content__des">
+            <h3>Brand Creation</h3>
+            <p>
+              We want you to be happy with our Tween Agency services. Our
+              digital agency is ready to serve you to grow your business in a
+              healthy way.
+            </p>
+            <p>
+              This is Bootstrap 5 HTML template for your website provided by
+              Tooplate. You can download, edit and use this layout for your
+              company website.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="section-project section-padding" id="project">
-        <div class="container">
-          <div class="row">
-            <h2 class="mx-auto">Digital Services</h2>
+        <div class="row tab-content hide" id="profile">
+          <div class="col-lg-6 tab-content__des">
+            <h3>Marie Smarty, CEO</h3>
+            <p>
+              Our priority is your happiness working together with us. We
+              guarantee you the best service quality from us. Feel free to
+              talk to us via email, twitter, or linkedin.
+            </p>
           </div>
-          <div class="row project-container">
-            <div class="col-lg-4 px-2 project-col">
-              <div class="project-box">
-                <picture
-                  ><img
-                    class="img-fluid project-img"
-                    src="images/work/anthony-espinosa-pYQSM-p_0_c-unsplash.jpg"
-                    alt="img"
-                /></picture>
-                <div class="project-info">
-                  <small class="project-tag">Art Direction</small>
-                  <h4 class="project-title">Simple Burger</h4>
-                </div>
+          <div class="col-lg-6 tab-content__img">
+            <picture>
+              <img src="images/maria.jpg" class="img-fluid" alt="image" />
+            </picture>
+          </div>
+        </div>
+        <div class="row tab-content hide" id="faq">
+          <div class="col-lg-6 tab-content__img">
+            <picture>
+              <img src="images/php.jpg" class="img-fluid" alt="image" />
+            </picture>
+          </div>
+          <div class="col-lg-6 tab-content__des">
+            <h3>Frequenlty Asked Questions</h3>
+            <div>
+              <div class="accordion">
+                <p>What is Tween Agency?</p>
+                <i class="bi bi-chevron-down"></i>
               </div>
-              <div class="project-box">
-                <picture
-                  ><img
-                    class="img-fluid project-img"
-                    src="images/work/samantha-gades-lf2pD--wIUA-unsplash.jpg"
-                    alt="img"
-                /></picture>
-                <div class="project-info">
-                  <small class="project-tag">Design</small>
-                  <h4 class="project-title">Fitness</h4>
-                </div>
+              <div class="panel">
+                <p>
+                  <strong>Tween Agency</strong> is free HTML template powered
+                  by Bootstrap 5 CSS framework. This means you can use all
+                  standard CSS classes provided by Bootstrap version 5 to
+                  customize your CSS layout.
+                </p>
+                <p>
+                  You are allowed to use it for your clients. You are not
+                  allowed to redistribute this
+                  <strong>template ZIP file</strong> on any other template
+                  website. Please contact Tooplate for more info.
+                </p>
               </div>
-            </div>
-            <div class="col-lg-4 px-2 project-col">
-              <div class="project-box">
-                <picture
-                  ><img
-                    class="img-fluid project-img"
-                    src="images/work/business-chart-visual-graphics-report-concept.jpg"
-                    alt="img"
-                /></picture>
-                <div class="project-info">
-                  <small class="project-tag">Web Development</small>
-                  <h4 class="project-title">Data Science</h4>
-                </div>
+              <div class="accordion">
+                <p>What are available services?</p>
+                <i class="bi bi-chevron-down"></i>
               </div>
-              <div class="project-box">
-                <picture
-                  ><img
-                    class="img-fluid project-img"
-                    src="images/work/tyler-nix-HmVQh_EQJhY-unsplash.jpg"
-                    alt="img"
-                /></picture>
-                <div class="project-info">
-                  <small class="project-tag">Branding</small>
-                  <small class="project-tag">Graphic Design</small>
-                  <h4 class="project-title">Heath</h4>
-                </div>
+              <div class="panel">
+                <p>
+                  We provide full digital marketing services for all various
+                  aspects of your company's web presence and social medias.
+                  You have 100% peace of mind for your company by working with
+                  us.
+                </p>
               </div>
-            </div>
-            <div class="col-lg-4 px-2 project-col">
-              <div class="project-box">
-                <picture
-                  ><img
-                    class="img-fluid project-img"
-                    src="images/work/mos-sukjaroenkraisri-jz8AmJDyhig-unsplash.jpg"
-                    alt="img"
-                /></picture>
-                <div class="project-info">
-                  <small class="project-tag">Photography</small>
-                  <h4 class="project-title">Portrait</h4>
-                </div>
+              <div class="accordion">
+                <p>How many successful projects?</p>
+                <i class="bi bi-chevron-down"></i>
               </div>
-              <div class="project-box project-text">
-                <p class="project-title">
-                  If you are interested in working together, Say Hi at
-                  <strong><a href="#">hi@company.com</a></strong>
+              <div class="panel">
+                <p>
+                  We have over 280+ successful projects for different
+                  companies. There are great experiences of working together
+                  with different clients all over the world.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section-pricing section-padding" id="pricing">
-        <div class="container">
-          <div class="row">
-            <h2 class="mx-auto">Tween Marketing Plans</h2>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 pricing-col">
-              <div class="pricing-plan">
-                <div class="pricing-header">
-                  <i class="pricing-icon bi-person"></i>
-                  <div class="pricing-name">
-                    <h4>Sufficient</h4>
-                  </div>
-                  <div class="pricing-price">
-                    <h4>$4,600</h4>
-                  </div>
-                  <small class="pricing-recommend">Recommended Plan</small>
-                </div>
-                <div class="pricing-body">
-                  <h5>Managed Features</h5>
-                  <ul class="pricing-list">
-                    <li class="pricing-list-item">Fully Digital</li>
-                    <li class="pricing-list-item">Social Media Managements</li>
-                    <li class="pricing-list-item">Website Optimizations</li>
-                    <li class="pricing-list-item">
-                      24/7 Phone Calls and Emails
-                    </li>
-                  </ul>
-                  <h5>Small to Mid-size Businesses</h5>
-                  <p>Everything you need for your digital marketing stuffs</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 pricing-col">
-              <div class="pricing-plan">
-                <div class="pricing-header">
-                  <i class="pricing-icon bi-briefcase"></i>
-                  <div class="pricing-name">
-                    <h4>Complete</h4>
-                  </div>
-                  <div class="pricing-price">
-                    <h4>$5,600</h4>
-                  </div>
-                  <small class="pricing-recommend">Recommended Plan</small>
-                </div>
-                <div class="pricing-body">
-                  <h5>Managed Features</h5>
-                  <ul class="pricing-list">
-                    <li class="pricing-list-item">Completely Digital</li>
-                    <li class="pricing-list-item">Everything managed online</li>
-                    <li class="pricing-list-item">Full Ecommerce Features</li>
-                    <li class="pricing-list-item">24/7 Instant Video Chats</li>
-                  </ul>
-                  <h5>Small to Mid-size Businesses</h5>
-                  <p>Fit for your company and ecommerce related stuffs</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-form section-padding" id="form">
-        <div class="container">
-          <div class="row">
-            <h2 class="mx-auto">Let's Chat</h2>
-          </div>
-          <form class="form mx-auto">
-            <div class="row">
-              <div class="form-box form-col-1">
-                <label for="name">Full Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="form-input"
-                  required=""
-                />
-              </div>
-
-              <div class="form-box form-col-1">
-                <label for="email">Email Address</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="form-input"
-                  required=""
-                />
-              </div>
-
-              <div class="form-box form-col-2">
-                <label for="subject">How did you know about us?</label>
-
-                <select
-                  class="form-select form-input"
-                  name="subject"
-                  id="subject"
-                >
-                  <option selected="">Choose a subject</option>
-                  <option value="web+search">Website Searches</option>
-                  <option value="social+media">Social Media</option>
-                  <option value="others">Others</option>
-                </select>
-              </div>
-
-              <div class="form-box form-col-3">
-                <label for="message">Tell us about the project</label>
-                <textarea
-                  class="form-input"
-                  rows="5"
-                  id="message"
-                  name="message"
-                ></textarea>
-                <button type="submit" class="btn" id="submit">Submit</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <!--End Main Section -->
-    <!--Footer here-->
-    <footer class="footer section-padding">
+      </div>
+    </section>
+    <section id="service" class="section-service section-padding">
       <div class="container">
         <div class="row">
-          <div class="footer-form">
-            <h4>Newsletter</h4>
-           
-             <form> <input type="email" class="form-input" placeholder="Your email is here" />
-              <button class="btn">Send now</button> </form>
-            
+          <h2 class="mx-auto">Digital Services</h2>
+        </div>
+        <div class="row service-container">
+          <div class="service-img bg-green">
+            <picture>
+              <img src="images/services/undraw_content_team_3epn.svg" class="img-fluid" />
+            </picture>
           </div>
-          <div class="footer-menu">
-            <h4 class="footer-menu-title">Services</h34>
+          <div class="service-box">
+            <h4>UI Design</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing industry</p>
+            <button class="btn">Learn more</button>
+          </div>
+          <div class="service-img bg-blue">
+            <picture>
+              <img src="images/services/undraw_Online_page_re_lhgx.svg" class="img-fluid" />
+            </picture>
+          </div>
+          <div class="service-box">
+            <h4>Marketing</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing industry</p>
+            <button class="btn">Learn more</button>
+          </div>
+          <div class="service-img bg-yellow">
+            <picture>
+              <img src="images/services/undraw_online_transactions_02ka.svg" class="img-fluid" />
+            </picture>
+          </div>
+          <div class="service-box">
+            <h4>ECommerce</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing industry</p>
+            <button class="btn">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project" class="section-project section-padding">
+      <div class="container">
+        <div class="row">
+          <h2 class="mx-auto">Digital Services</h2>
+        </div>
+        <div class="row project-container">
+          <div class="col-lg-4 px-2 project-col">
+            <div class="project-box">
+              <picture><img class="img-fluid project-img" src="images/work/anthony-espinosa-pYQSM-p_0_c-unsplash.jpg"
+                  alt="img" /></picture>
+              <div class="project-info">
+                <small class="project-tag">Art Direction</small>
+                <h4 class="project-title">Simple Burger</h4>
+              </div>
+            </div>
+            <div class="project-box">
+              <picture><img class="img-fluid project-img" src="images/work/samantha-gades-lf2pD--wIUA-unsplash.jpg"
+                  alt="img" /></picture>
+              <div class="project-info">
+                <small class="project-tag">Design</small>
+                <h4 class="project-title">Fitness</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 px-2 project-col">
+            <div class="project-box">
+              <picture><img class="img-fluid project-img"
+                  src="images/work/business-chart-visual-graphics-report-concept.jpg" alt="img" /></picture>
+              <div class="project-info">
+                <small class="project-tag">Web Development</small>
+                <h4 class="project-title">Data Science</h4>
+              </div>
+            </div>
+            <div class="project-box">
+              <picture><img class="img-fluid project-img" src="images/work/tyler-nix-HmVQh_EQJhY-unsplash.jpg"
+                  alt="img" /></picture>
+              <div class="project-info">
+                <small class="project-tag">Branding</small>
+                <small class="project-tag">Graphic Design</small>
+                <h4 class="project-title">Heath</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 px-2 project-col">
+            <div class="project-box">
+              <picture><img class="img-fluid project-img"
+                  src="images/work/mos-sukjaroenkraisri-jz8AmJDyhig-unsplash.jpg" alt="img" /></picture>
+              <div class="project-info">
+                <small class="project-tag">Photography</small>
+                <h4 class="project-title">Portrait</h4>
+              </div>
+            </div>
+            <div class="project-box project-text">
+              <p class="project-title">
+                If you are interested in working together, Say Hi at
+                <strong><a href="#">hi@company.com</a></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="section-pricing section-padding">
+      <div class="container">
+        <div class="row">
+          <h2 class="mx-auto">Tween Marketing Plans</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 pricing-col">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <i class="pricing-icon bi-person"></i>
+                <div class="pricing-name">
+                  <h4>Sufficient</h4>
+                </div>
+                <div class="pricing-price">
+                  <h4>$4,600</h4>
+                </div>
+                <small class="pricing-recommend">Recommended Plan</small>
+              </div>
+              <div class="pricing-body">
+                <h5>Managed Features</h5>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">Fully Digital</li>
+                  <li class="pricing-list-item">Social Media Managements</li>
+                  <li class="pricing-list-item">Website Optimizations</li>
+                  <li class="pricing-list-item">
+                    24/7 Phone Calls and Emails
+                  </li>
+                </ul>
+                <h5>Small to Mid-size Businesses</h5>
+                <p>Everything you need for your digital marketing stuffs</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pricing-col">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <i class="pricing-icon bi-briefcase"></i>
+                <div class="pricing-name">
+                  <h4>Complete</h4>
+                </div>
+                <div class="pricing-price">
+                  <h4>$5,600</h4>
+                </div>
+                <small class="pricing-recommend">Recommended Plan</small>
+              </div>
+              <div class="pricing-body">
+                <h5>Managed Features</h5>
+                <ul class="pricing-list">
+                  <li class="pricing-list-item">Completely Digital</li>
+                  <li class="pricing-list-item">Everything managed online</li>
+                  <li class="pricing-list-item">Full Ecommerce Features</li>
+                  <li class="pricing-list-item">24/7 Instant Video Chats</li>
+                </ul>
+                <h5>Small to Mid-size Businesses</h5>
+                <p>Fit for your company and ecommerce related stuffs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="form" class="section-form section-padding">
+      <div class="container">
+        <div class="row">
+          <h2 class="mx-auto">Let's Chat</h2>
+        </div>
+        <form class="form mx-auto">
+          <div class="row">
+            <div class="form-box form-col-1">
+              <label for="name">Full Name</label>
+              <input type="text" name="name" id="name" class="form-input" required="" />
+            </div>
+
+            <div class="form-box form-col-1">
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" class="form-input" required="" />
+            </div>
+
+            <div class="form-box form-col-2">
+              <label for="subject">How did you know about us?</label>
+
+              <select class="form-select form-input" name="subject" id="subject">
+                <option selected="">Choose a subject</option>
+                <option value="web+search">Website Searches</option>
+                <option value="social+media">Social Media</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+
+            <div class="form-box form-col-3">
+              <label for="message">Tell us about the project</label>
+              <textarea class="form-input" rows="5" id="message" name="message"></textarea>
+              <button type="submit" class="btn" id="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!--End Main Section -->
+  <!--Footer here-->
+  <footer class="footer section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="footer-form">
+          <h4>Newsletter</h4>
+
+          <form> <input type="email" class="form-input" placeholder="Your email is here" />
+            <button class="btn">Send now</button>
+          </form>
+
+        </div>
+        <div class="footer-menu">
+          <h4 class="footer-menu-title">Services</h34>
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
                 <a href="#" class="footer-menu-link">Digital Marketing</a>
@@ -466,15 +407,16 @@
                 <a href="#" class="footer-menu-link">Video Contents</a>
               </li>
             </ul>
-          </div>
-          <div class="footer-menu">
-              <h4>Say Hi</h4>
-              <p>Sunderland SR6 0JL, United Kingdom</p>
-              <p>email@company.com</p>
-          </div>
+        </div>
+        <div class="footer-menu">
+          <h4>Say Hi</h4>
+          <p>Sunderland SR6 0JL, United Kingdom</p>
+          <p>email@company.com</p>
         </div>
       </div>
-    </footer>
-    <!--End footer -->
-  </body>
+    </div>
+  </footer>
+  <!--End footer -->
+</body>
+
 </html>

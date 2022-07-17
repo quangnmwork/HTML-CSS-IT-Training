@@ -218,7 +218,7 @@ p {
 .sticky .navbar-list__item > a {
   color: var(--dark-color);
 }
-.active a {
+.active {
   color: var(--primary-color) !important;
 }
 .sticky .navbar-brand {
@@ -506,7 +506,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 2rem 4rem;
-  position: relative;
+
   text-align: center;
   background-color: var(--white-color);
 }
@@ -606,18 +606,12 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
 }
 .section-pricing h2 {
   color: var(--white-color);
 }
 .pricing-col {
   margin: 2rem 0rem;
-}
-.section-pricing .container {
-  position: relative;
-
-  z-index: 2;
 }
 
 .pricing-plan {
