@@ -1,6 +1,6 @@
 /*custom element,overall*/
 :root {
-  --body-font-family: "Karla", sans-serif;
+  --body-font-family: 'Karla', sans-serif;
   --white-color: #ffffff;
   --primary-color: #38b083;
   --section-bg-color: #f5f5f5;
@@ -36,7 +36,7 @@
 }
 html {
   font-family: var(--body-font-family);
-  font-size: 100%;
+  font-size: 90%;
 }
 @media screen and (max-width: 48em) {
   html {
@@ -139,7 +139,7 @@ p {
   padding-left: var(--gutter-x);
   padding-right: var(--gutter-x);
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 1111px) {
   .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -218,6 +218,9 @@ p {
 .sticky .navbar-list__item > a {
   color: var(--dark-color);
 }
+.active a {
+  color: var(--primary-color) !important;
+}
 .sticky .navbar-brand {
   color: var(--dark-color);
 }
@@ -240,13 +243,10 @@ p {
 .navbar-list__item > a:hover {
   color: var(--primary-color);
 }
-@media screen and (max-width: 62em) {
-  .navbar-brand {
-    font-size: 1.6rem;
-  }
+@media screen and (max-width: 1111px) {
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1111px) {
   .toggle-btn {
     display: block;
     margin-left: 0.5rem;
@@ -266,6 +266,10 @@ p {
     width: 100vw;
     background-color: var(--white-color);
   }
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
   .show .navbar-list__item {
     margin-left: 1rem;
     padding: 1rem 0rem;
@@ -293,7 +297,7 @@ p {
 
 /*hero section*/
 .header {
-  background-image: url("./images/slide/microsoft-edge-FAaz8lkinzs-unsplash.jpg");
+  background-image: url('./images/slide/microsoft-edge-FAaz8lkinzs-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -301,7 +305,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-.hero-container {
+.section-hero {
   width: 100%;
   flex: 1;
   display: flex;
@@ -359,12 +363,12 @@ p {
 .hero__btn:hover {
   color: var(--primary-color);
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 1111px) {
   .hero {
     justify-content: space-between;
   }
   .header {
-    height: 80vh;
+    height: 100vh;
   }
   .hero__text {
     width: 90%;
@@ -598,7 +602,7 @@ p {
 /* end section project*/
 /*section pricing*/
 .section-pricing {
-  background-image: url("./images/maria-stewart-p4tj0g-_aMM-unsplash.jpg");
+  background-image: url('./images/maria-stewart-p4tj0g-_aMM-unsplash.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -843,6 +847,9 @@ p {
     width: 100%;
     margin-top: 2rem;
     padding: 0;
+  }
+  .footer-form form .form-input {
+    width: 60%;
   }
   .footer-menu {
     width: 100%;
