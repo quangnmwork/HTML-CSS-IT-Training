@@ -79,7 +79,7 @@ window.addEventListener('scroll', () => {
     let offset = sec.offsetTop;
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
-    if (top >= offset - 100 && top < offset + height) {
+    if (top >= offset - 100 && top < offset + height - 100) {
       activeNavItem(id);
     }
   });
