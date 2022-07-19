@@ -7,6 +7,7 @@ const tabContents = document.querySelectorAll('.tab-content');
 const accordions = document.querySelectorAll('.accordion');
 const section = document.querySelectorAll('section');
 const navbarItems = document.querySelectorAll('.navbar-list__item a');
+const pseudoHeader = document.querySelector('.pseudo-header');
 
 const activeNavItem = (idTab) => {
   navbarItems.forEach((item) => {
@@ -36,6 +37,9 @@ window.addEventListener('scroll', function () {
   } else {
     navbar.classList.remove('sticky');
   }
+  pseudoHeader.style.display = 'block';
+
+  pseudoHeader.style.height = document.querySelector('.navbar').offsetHeight;
 });
 
 accordions.forEach((acc) =>
