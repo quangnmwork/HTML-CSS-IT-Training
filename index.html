@@ -33,9 +33,9 @@
           <ul class="navbar-list">
             <li class="navbar-list__item"><a href="#hero">Home</a></li>
             <li class="navbar-list__item "><a href="#about">About</a></li>
-            <li class="navbar-list__item"><a href="#service" >Services</a></li>
-            <li class="navbar-list__item"><a href="#project" >Our Work</a></li>
-            <li class="navbar-list__item"><a href="#pricing" >Pricing</a></li>
+            <li class="navbar-list__item"><a href="#service">Services</a></li>
+            <li class="navbar-list__item"><a href="#project">Our Work</a></li>
+            <li class="navbar-list__item"><a href="#pricing">Pricing</a></li>
             <li class="navbar-list__item"><a href="#form">Contact</a></li>
           </ul>
         </div>
@@ -76,19 +76,24 @@
     <!--Section about-->
     <section id="about" class="section-about section-padding">
       <div class="container">
-        <div class="row about-heading">
+        <input type="radio" id="tab1" name="css-tabs" checked>
+		    <input type="radio" id="tab2" name="css-tabs">
+		    <input type="radio" id="tab3" name="css-tabs">
+        <div class="about-heading">
           <div class="col-lg-6">
             <h2>Digital Happiness</h2>
           </div>
-          <div class="col-lg-6">
-            <div class="tab">
-              <button class="tab-link active" data-value="introduction">
-                Introduction</button><button class="tab-link" data-value="profile">Profile</button><button
-                class="tab-link" data-value="faq">FAQs</button>
-            </div>
+          <div class="tab">
+              <ul class="tabs">
+                <li class="tab-link"><label for="tab1">Introduction</label></li>
+                <li class="tab-link"><label for="tab2">Profile</label></li>
+                <li class="tab-link"><label for="tab3">FAQs</label></li>
+              </ul>
           </div>
+          
         </div>
-        <div class="row tab-content show" id="introduction">
+      
+        <div class="row tab-content" id="introduction">
           <div class="col-lg-6 tab-content__img">
             <picture>
               <img src="images/webpage-browser-digital-icon-symbols-concept.jpg" class="img-fluid" alt="image" />
@@ -108,7 +113,7 @@
             </p>
           </div>
         </div>
-        <div class="row tab-content hide" id="profile">
+        <div class="row tab-content" id="profile">
           <div class="col-lg-6 tab-content__des">
             <h3>Marie Smarty, CEO</h3>
             <p>
@@ -123,7 +128,7 @@
             </picture>
           </div>
         </div>
-        <div class="row tab-content hide" id="faq">
+        <div class="row tab-content" id="faq">
           <div class="col-lg-6 tab-content__img">
             <picture>
               <img src="images/php.jpg" class="img-fluid" alt="image" />

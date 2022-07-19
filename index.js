@@ -8,12 +8,6 @@ const accordions = document.querySelectorAll('.accordion');
 const section = document.querySelectorAll('section');
 const navbarItems = document.querySelectorAll('.navbar-list__item a');
 
-const resetTabs = (idTab) => {
-  tabs.forEach((tab) => {
-    if (tab.dataset.value !== idTab) tab.classList.remove('active');
-    else tab.classList.add('active');
-  });
-};
 const activeNavItem = (idTab) => {
   navbarItems.forEach((item) => {
     if (item.getAttribute('href').substring(1) !== idTab)
@@ -27,8 +21,7 @@ const resetTabContents = (idContent) => {
     else tabContent.style.display = 'flex';
   });
 };
-resetTabs('introduction');
-resetTabContents('introduction');
+
 toggleButton.addEventListener('click', (e) => {
   e.preventDefault();
   toggleButtonLine[0].classList.toggle('toggle-btn__line-1');
@@ -43,14 +36,6 @@ window.addEventListener('scroll', function () {
   } else {
     navbar.classList.remove('sticky');
   }
-});
-
-tabs.forEach((tab) => {
-  tab.addEventListener('click', (e) => {
-    e.preventDefault();
-    resetTabs(tab.dataset.value);
-    resetTabContents(tab.dataset.value);
-  });
 });
 
 accordions.forEach((acc) =>
