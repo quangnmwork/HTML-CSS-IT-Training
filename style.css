@@ -1,0 +1,200 @@
+/*custom css*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --color-primary: #2eb872;
+  --color-light: #f3f4f5;
+  --color-dark: #282f34;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+}
+.btn {
+  font-weight: 500;
+  border-radius: 0;
+  transition: 0.5s;
+}
+.text-primary {
+  color: var(--color-primary) !important;
+}
+a {
+  text-decoration: none;
+}
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+/* end custom element*/
+.bg-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/bg-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+/*navbar*/
+.navbar .navbar-brand img {
+  max-height: 50px;
+}
+.navbar .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--color-primary);
+}
+.nav-link.active {
+  color: var(--color-primary) !important;
+}
+/*end navbar*/
+.btn.btn-primary {
+  background-color: var(--color-primary) !important;
+}
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: var(--color-light);
+}
+
+.btn-play {
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  outline: none !important;
+  background: var(--color-light);
+}
+.btn-play span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border-left: 16px solid var(--color-primary);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+.carousel-item > img {
+  width: 100%;
+  height: 100vh;
+}
+
+/*about img*/
+.img-border {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+}
+.img-border::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 3rem;
+  bottom: 3rem;
+  border: 5px solid var(--color-primary);
+}
+.img-border img {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  object-fit: cover;
+}
+.animal-item {
+  position: relative;
+  display: block;
+}
+
+.animal-item .animal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px !important;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.animal-item:hover .animal-text {
+  opacity: 1;
+  padding-bottom: 20px !important;
+}
+.member-ship {
+  padding: 45px 30px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.7);
+}
+.member-ship img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+.bg-schedule {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/bg-2.jpg) center center no-repeat;
+  background-size: cover;
+}
+.list-group .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-light);
+  background: rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.table td {
+  padding: 0.5rem 1rem;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.table tr:last-child td {
+  border: none;
+}
+.footer-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.footer-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.footer-link:hover {
+  color: var(--color-primary);
+}

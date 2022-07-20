@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoofari - Zoo & Safari Park</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Topbar-->
+    <div class="container-fluid bg-light">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="d-inline-flex h-100 align-items-center py-3 me-4">
+            <small class="bi bi-geo-alt-fill me-2 text-primary"> </small>
+            <small>123 Street, New York, USA</small>
+          </div>
+          <div class="d-inline-flex h-100 align-items-center py-3">
+            <small class="bi bi-clock me-2 text-primary"></small>
+            <small>Mon - Fri : 09.00 AM - 09.00 PM </small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="d-inline-flex h-100 align-items-center">
+            <small class="bi bi-telephone-fill me-2 text-primary"></small>
+            <small>+012 345 6789 </small>
+          </div>
+          <div class="d-inline-flex h-100 align-items-center">
+            <a class="btn btn-sm bg-white text-primary me-1" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="d-inline-flex h-100 align-items-center">
+            <a class="btn btn-sm bg-white text-primary me-1" href=""
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </div>
+          <div class="d-inline-flex h-100 align-items-center">
+            <a class="btn btn-sm bg-white text-primary me-1" href=""
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </div>
+          <div class="d-inline-flex h-100 align-items-center">
+            <a class="btn btn-sm bg-white text-primary me-1" href=""
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End topbar-->
+    <!--Navbar-->
+    <nav
+      class="container-fluid navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+        <img src="img/icon/icon-10.png" class="img-fluid me-3" alt="zoorify" />
+        <h1 class="m-0 text-primary">Zoofari</h1> </a
+      ><button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Our animal</a></li>
+              <li><a class="dropdown-item" href="#">Membership</a></li>
+              <li><a class="dropdown-item" href="#">Visiting Hours</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-sm btn-primary">
+          Buy ticket <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </nav>
+    <!--End navbar-->
+
+    <main>
+      <!--Hero-->
+      <section class="section-hero container-fluid p-0 mb-5">
+        <div class="row gx-0 flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 p-0">
+            <div
+              class="bg-main h-100 d-flex flex-column justify-content-center p-5"
+            >
+              <h1 class="h1 text-light mb-5">
+                Enjoy Wonderful Day With Your Family
+              </h1>
+              <div class="d-flex align-items-center pt-4">
+                <button class="btn btn-primary px-3 py-2 me-3">
+                  Read more
+                </button>
+                <button
+                  type="button"
+                  class="btn-play"
+                  data-bs-toggle="modal"
+                  data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                  data-bs-target="#videoModal"
+                >
+                  <span></span>
+                </button>
+                <h6 class="text-white m-0 ms-2 d-none d-sm-block">
+                  Watch Video
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/carousel-1.jpg"
+                    class="img-fluid"
+                    alt="carousel-1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/carousel-2.jpg"
+                    class="img-fluid"
+                    alt="carousel-2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/carousel-3.jpg"
+                    class="img-fluid"
+                    alt="carousel-3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End hero-->
+      <!--About-->
+      <section class="section-about container-xxl py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <p><span class="me-2 text-primary">#</span> Welcome to Zoofari</p>
+              <h1 class="display-5 mb-4">
+                Why You Should Visit
+                <span class="text-primary">Zoofari</span> Park!
+              </h1>
+              <p class="mb-3">
+                Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
+                stet est diam rebum amet diam ipsum. Clita clita labore, dolor
+                duo nonumy clita sit at, sed sit sanctus dolor eos.
+              </p>
+              <h6 class="mb-3">
+                <i class="far fa-check-circle text-primary me-3"></i>Free Car
+                Parking
+              </h6>
+              <h6 class="mb-3">
+                <i class="far fa-check-circle text-primary me-3"></i>Natural
+                Environment
+              </h6>
+              <h6 class="mb-3">
+                <i class="far fa-check-circle text-primary me-3"></i
+                >Professional Guide & Security
+              </h6>
+              <h6 class="mb-4">
+                <i class="far fa-check-circle text-primary me-3"></i>World Best
+                Animals
+              </h6>
+              <button class="btn btn-primary px-4 py-3">Read More</button>
+            </div>
+            <div class="col-lg-6">
+              <div class="img-border">
+                <img src="img/about.jpg" alt="about lion" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End About-->
+      <!--Analyze -->
+      <section
+        class="section-analyze container-xxl bg-primary bg-main my-5 py-5"
+      >
+        <div class="container py-5">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3 text-center" data-wow-delay="0.1s">
+              <i class="fa fa-paw fa-3x text-primary mb-3"></i>
+              <h1 class="text-white mb-2">95</h1>
+              <p class="text-white mb-0">Total Animal</p>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center" data-wow-delay="0.1s">
+              <i class="fa fa-users fa-3x text-primary mb-3"></i>
+              <h1 class="text-white mb-2">2222</h1>
+              <p class="text-white mb-0">Daily Visitors</p>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center" data-wow-delay="0.1s">
+              <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
+              <h1 class="text-white mb-2">1000</h1>
+              <p class="text-white mb-0">Membership</p>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center" data-wow-delay="0.1s">
+              <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+              <h1 class="text-white mb-2">300</h1>
+              <p class="text-white mb-0">Save wild life</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Analyze-->
+      <section class="section-service container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 mb-5">
+            <div class="col-lg-6">
+              <p><span class="me-2 text-primary">#</span> Our Services</p>
+              <h1 class="display-5 mb-4">
+                Special Services For
+                <span class="text-primary">Zoofari</span> Visitors
+              </h1>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="h-100 d-flex align-items-center bg-primary py-4 px-4 px-sm-5"
+              >
+                <i class="fa fa-3x fa-mobile-alt text-white"></i>
+                <div class="ms-4">
+                  <p class="text-white mb-0">Call for more info</p>
+                  <h2 class="text-white mb-0">+012 345 6789</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-5 gx-4">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-2.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Car Parking</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-3.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Animal Photos</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-4.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Guide Services</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-5.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Food & Beverages</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-6.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Zoo Shopping</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-7.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Free Hi Speed Wi-Fi</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-8.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Play Ground</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img
+                class="img-fluid mb-3"
+                src="img/icon/icon-9.png"
+                alt="Icon"
+              />
+              <h5 class="mb-3">Rest House</h5>
+              <span
+                >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                sed diam stet diam sed stet.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End section services-->
+      <!--Section animal-->
+      <section class="section-animal container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 mb-5 align-items-end">
+            <div class="col-lg-6">
+              <p><span class="me-2 text-primary">#</span> Our Services</p>
+              <h1 class="display-5">
+                Special Services For
+                <span class="text-primary">Zoofari</span> Visitors
+              </h1>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <button class="btn btn-primary py-3 px-5">
+                Explore More Animals
+              </button>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="position-relative animal-item">
+                    <img
+                      src="img/animal-md-1.jpg"
+                      alt="horse"
+                      class="img-fluid"
+                    />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Animal</p>
+                      <h5 class="text-white mb-0">Deer</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="position-relative animal-item">
+                    <img
+                      src="img/animal-lg-1.jpg"
+                      alt="horse"
+                      class="img-fluid"
+                    />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Animal</p>
+                      <h5 class="text-white mb-0">Monkey</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="position-relative animal-item">
+                    <img
+                      src="img/animal-lg-2.jpg"
+                      alt="horse"
+                      class="img-fluid"
+                    />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Animal</p>
+                      <h5 class="text-white mb-0">Cat</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="position-relative animal-item">
+                    <img
+                      src="img/animal-md-2.jpg"
+                      alt="horse"
+                      class="img-fluid"
+                    />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Animal</p>
+                      <h5 class="text-white mb-0">Zebra</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="position-relative animal-item">
+                    <img
+                      src="img/animal-md-3.jpg"
+                      alt="horse"
+                      class="img-fluid"
+                    />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Animal</p>
+                      <h5 class="text-white mb-0">Elephant</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="position-relative animal-item">
+                    <img
+                      src="img/animal-lg-3.jpg"
+                      alt="horse"
+                      class="img-fluid"
+                    />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Animal</p>
+                      <h5 class="text-white mb-0">Giraffe</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end section animal-->
+      <!--section schedule-->
+      <section id="section-schedule" class="container-xxl py-5 bg-schedule">
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-md-6">
+              <h2 class="text-white mb-5 display-6">Visiting Hours</h2>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span>Monday</span>
+                  <span>9:00AM-6:00PM</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Tuesday</span>
+                  <span>9:00AM-6:00PM</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Wednesday</span>
+                  <span>9:00AM-6:00PM</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Thursday</span>
+                  <span>9:00AM-6:00PM</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Friday</span>
+                  <span>9:00AM-6:00PM</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Saturday</span>
+                  <span>9:00AM-6:00PM</span>
+                </li>
+                <li class="list-group-item">
+                  <span>Sunday</span>
+                  <span>Closed</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2 class="text-white mb-5 display-6">Contact Info</h2>
+              <table class="table text-light">
+                <tbody>
+                  <tr>
+                    <td>Office</td>
+                    <td>123 Street, New York,USA</td>
+                  </tr>
+                  <tr>
+                    <td>Zoo</td>
+                    <td>123 Street, New York,USA</td>
+                  </tr>
+                  <tr>
+                    <td>Ticket</td>
+                    <td>
+                      <p class="mb-2">+012 345 6789</p>
+                      <p>ticket@example.com</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Support</td>
+                    <td>
+                      <p class="mb-2">+012 345 6789</p>
+                      <p>support@example.com</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End section contact-->
+      <!--section schedule-->
+      <section id="section-member" class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 mb-5 align-items-end">
+            <div class="col-lg-6">
+              <p><span class="me-2 text-primary">#</span> Our Services</p>
+              <h1 class="display-5">
+                You Can Be A Proud Member Of
+                <span class="text-primary">Zoofari</span>
+              </h1>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <button class="btn btn-primary py-3 px-5">Special Pricing</button>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="member-ship position-relative">
+                <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
+                <h1 class="display-1">01</h1>
+                <h4 class="text-white mb-3">Popular</h4>
+                <h3 class="text-primary mb-4">$99.00</h3>
+                <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
+                <p>
+                  <i class="fa fa-check text-primary me-3"></i>2 adult and 2
+                  child
+                </p>
+                <p>
+                  <i class="fa fa-check text-primary me-3"></i>Free animal
+                  exhibition
+                </p>
+                <a class="btn btn-outline-light px-4 mt-3" href=""
+                  >Get Started</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="member-ship position-relative">
+                <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
+                <h1 class="display-1">02</h1>
+                <h4 class="text-white mb-3">Standar</h4>
+                <h3 class="text-primary mb-4">$149.00</h3>
+                <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
+                <p>
+                  <i class="fa fa-check text-primary me-3"></i>2 adult and 2
+                  child
+                </p>
+                <p>
+                  <i class="fa fa-check text-primary me-3"></i>Free animal
+                  exhibition
+                </p>
+                <a class="btn btn-outline-light px-4 mt-3" href=""
+                  >Get Started</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="member-ship position-relative">
+                <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
+                <h1 class="display-1">03</h1>
+                <h4 class="text-white mb-3">Premium</h4>
+                <h3 class="text-primary mb-4">$199.00</h3>
+                <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
+                <p>
+                  <i class="fa fa-check text-primary me-3"></i>2 adult and 2
+                  child
+                </p>
+                <p>
+                  <i class="fa fa-check text-primary me-3"></i>Free animal
+                  exhibition
+                </p>
+                <a class="btn btn-outline-light px-4 mt-3" href=""
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end section member-->
+    </main>
+    <footer class="container-fluid bg-schedule bg-dark text-light mt-5 pt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@example.com
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Quick Links</h5>
+            <p class="mb-2 footer-link">About us</p>
+            <p class="mb-2 footer-link">Contact us</p>
+            <p class="mb-2 footer-link">Our Services</p>
+            <p class="mb-2 footer-link">Term & Conditions</p>
+            <p class="mb-2 footer-link">Support</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Popular Links</h5>
+            <p class="mb-2 footer-link">About us</p>
+            <p class="mb-2 footer-link">Contact us</p>
+            <p class="mb-2 footer-link">Our Services</p>
+            <p class="mb-2 footer-link">Term & Conditions</p>
+            <p class="mb-2 footer-link">Support</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Newsletter</h5>
+            <p class="mb-2">
+              Dolor amet sit justo amet elitr clita ipsum elitr est.
+            </p>
+            <form class="position-relative">
+              <input
+                type="email"
+                class="form-control py-3 ps-4 pe-5"
+                placeholder="Your Email"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+              <button
+                class="btn btn-primary position-absolute top-0 end-0 me-2 mt-2"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
