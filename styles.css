@@ -489,6 +489,11 @@ p {
   cursor: pointer;
   margin: 0.2rem 0;
 }
+.accordion::after {
+  font-family: 'Font Awesome\ 5 Free';
+  content: '\f107'; /* FontAwesome Unicode */
+  font-weight: 900;
+}
 .panel {
   max-height: 0;
   overflow: hidden;
@@ -680,6 +685,12 @@ p {
 
 .pricing-price {
   margin-left: auto;
+}
+.pricing-price p {
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  color: var(--dark-color);
+  font-size: var(--h4-font-size);
 }
 
 .pricing-recommend {
