@@ -1,0 +1,49 @@
+mixin serviceItem(icon,title,desc)
+    .service-item 
+        .service-icon 
+            img(src=icon)
+        h3.global-heading.global-heading--normal.service-title= title
+        p.global-text.service-text= desc
+
+mixin sectionFlexLayout(idSection,name,title,img,imgFirst)
+    section.who(id=idSection)
+        .container 
+            .who-container 
+                if imgFirst            
+                    .who-img 
+                        img(src=img alt="who we are")
+                    .who-content
+                        span.global-caption= name
+                        h2.global-heading.global-heading--big= title
+                        p.global-text Nunc venenalis Iorem sed risus trlstque sent per. Duls porta, rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. Curubilu r eleirend, erut ullamcorper porta. eras turpis.
+                        a.button.button--primary(href="#!") Get In Touch
+                else 
+                    .who-content
+                        span.global-caption= name
+                        h2.global-heading.global-heading--big= title
+                        p.global-text Nunc venenalis Iorem sed risus trlstque sent per. Duls porta, rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. Curubilu r eleirend, erut ullamcorper porta. eras turpis.
+                        a.button.button--primary(href="#!") Get In Touch
+                    .who-img 
+                        img(src=img alt="who we are")
+
+mixin reviewCard(img,name,job,desc,rating)
+    .review-card 
+        h3.review-name= name
+        span.review-job= job
+        p.review-desc= desc
+        .review-avatar 
+            img(src=img)
+        .review-quote
+            img(srcset="./images/icon-quote.png 2x")
+        .review-rating 
+            img(src="./images/icon-star.png")
+            span= rating
+
+
+mixin blogItem(img,title,desc) 
+    .blog-item 
+        .blog-img
+            img(srcset= img)
+        .blog-content
+            h3.blog-title= title
+            p.blog-desc= desc

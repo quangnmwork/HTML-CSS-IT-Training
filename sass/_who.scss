@@ -1,0 +1,35 @@
+.who {
+  padding-bottom: var(--section-spacing);
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 87px;
+  }
+  &-img {
+    width: 50%;
+  }
+  &-content {
+    flex: 1;
+  }
+  .global-caption,
+  .global-heading {
+    margin-bottom: 25px;
+  }
+  .global-text {
+    margin-bottom: 37px;
+  }
+  @media screen and (max-width: 1023px) {
+    &-container {
+      gap: 30px;
+      flex-direction: column;
+    }
+    &-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
