@@ -1,0 +1,21 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin scrollSnap {
+  display: grid;
+  justify-content: flex-start;
+  grid-auto-columns: 300px;
+  grid-auto-flow: column;
+  grid-gap: 1.5rem;
+  overflow: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  scroll-padding: 20px;
+  padding: 20px;
+  margin-left: -20px;
+  grid-template-columns: unset;
+}

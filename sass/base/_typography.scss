@@ -1,0 +1,43 @@
+.global {
+  &-caption {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.185em;
+    display: block;
+    color: var(--primary-color);
+  }
+  &-heading {
+    color: var(--gray-dark);
+    font-weight: bold;
+    &--huge {
+      font-size: 50px;
+      line-height: calc(56 / 50);
+    }
+    &--big {
+      font-size: 40px;
+      line-height: calc(50 / 40);
+    }
+    &--normal {
+      font-size: 21px;
+      line-height: calc(31.5 / 21);
+      font-weight: 600;
+    }
+  }
+  &-text {
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    color: var(--gray-blur);
+  }
+}
+@media screen and (max-width: 767px) {
+  .global-heading {
+    &--big {
+      font-size: 30px;
+    }
+  }
+  .global-text {
+    font-size: 14px;
+  }
+}

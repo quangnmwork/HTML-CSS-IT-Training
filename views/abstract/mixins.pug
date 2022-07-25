@@ -1,0 +1,62 @@
+mixin serviceItem(obj)
+    .service-item 
+        .service-icon 
+            img(src=obj.icon)
+        h3.global-heading.global-heading--normal.service-title= obj.title
+        p.global-text.service-text= obj.desc
+
+mixin sectionFlexLayout(obj)
+    section.flayout(class=obj.classSection)
+        .container 
+            .flayout-container 
+                if obj.imgFirst            
+                    .flayout-img 
+                        img(src=obj.img alt="who we are")
+                    .flayout-content
+                        span.global-caption= obj.name
+                        h2.global-heading.global-heading--big= obj.title
+                        p.global-text Nunc venenalis Iorem sed risus trlstque sent per. Duls porta, rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. Curubilu r eleirend, erut ullamcorper porta. eras turpis.
+                        a.button.button--primary(href="#!") Get In Touch
+                else 
+                    .flayout-content
+                        span.global-caption= obj.name
+                        h2.global-heading.global-heading--big= obj.title
+                        p.global-text Nunc venenalis Iorem sed risus trlstque sent per. Duls porta, rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. Curubilu r eleirend, erut ullamcorper porta. eras turpis.
+                        a.button.button--primary(href="#!") Get In Touch
+                    .flayout-img 
+                        img(src=obj.img alt="who we are")
+
+mixin reviewCard(obj)
+    .review-card
+        .review-avatar
+            img(srcset= obj.img)
+        h3.review-name= obj.name
+        span.review-job= obj.job
+        p.review-desc= obj.desc
+        .review-rating
+            img(srcset="./images/icon-star.png 2x")
+            span= obj.rating
+        .review-quote
+            img(srcset="./images/icon-quote.png 2x")
+mixin headerMenu(obj)
+    ul.menu
+        each val in ['Home','Why us?','Features','Pricing','Contact']
+            li.menu-item 
+                - const check = obj.itemActive.toString() == val.toString() 
+                if check
+                    a.menu-link.menu-link--active(href="#!")= val
+                else 
+                    a.menu-link(href="#!")= val
+        if !obj.isLogin
+            li.auth
+                a.button.button--secondary.auth-login(href="#!") Login
+                a.button.button--primary.auth-signup(href="#!") Signup
+
+
+mixin blogItem(obj) 
+    .blog-item 
+        .blog-img
+            img(srcset= obj.img)
+        .blog-content
+            h3.blog-title= obj.title
+            p.blog-desc= obj.desc

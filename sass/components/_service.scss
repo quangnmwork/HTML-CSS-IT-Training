@@ -1,7 +1,5 @@
 .service {
-  padding-bottom: 70px;
   &-header {
-    text-align: center;
     margin-bottom: 73px;
   }
   &-caption {
@@ -30,7 +28,7 @@
       border-color: transparent;
     }
     &:hover .service-icon {
-      background-color: $secondary-color;
+      background-color: var(--secondary-color);
       img {
         filter: brightness(10);
       }
@@ -59,19 +57,12 @@
       margin-bottom: 33px;
     }
     &-list {
-      display: grid;
-      justify-content: space-around;
-      grid-auto-columns: 300px;
-      grid-auto-flow: column;
-      grid-gap: 1.5rem;
-      overflow: auto;
-      overflow-y: hidden;
-      scroll-snap-type: x mandatory;
-      scroll-snap-stop: always;
-      scroll-snap-align: center;
-      grid-template-columns: unset;
+      @include scrollSnap;
     }
-
+    &-list::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
     &-list > * {
       scroll-snap-align: start;
       padding: 20px 20px 45px;

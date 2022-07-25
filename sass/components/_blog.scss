@@ -1,7 +1,5 @@
 .blog {
-  margin-bottom: var(--section-spacing);
   &-header {
-    text-align: center;
     margin-bottom: 78px;
   }
   &-list {
@@ -41,25 +39,13 @@
       background: #ffffff;
       box-shadow: 0px 46px 100px -31px rgba(0, 0, 0, 0.1);
       .blog-title {
-        color: $third-color;
+        color: var(--third-color);
       }
     }
   }
   @media screen and (max-width: 1023px) {
-    & &-list {
-      display: grid;
-      justify-content: flex-start;
-      grid-auto-columns: 300px;
-      grid-auto-flow: column;
-      grid-gap: 1.5rem;
-      overflow: auto;
-      overflow-y: hidden;
-      scroll-snap-type: x mandatory;
-      scroll-snap-stop: always;
-      scroll-padding: 20px;
-      padding: 20px;
-      margin-left: -20px;
-      grid-template-columns: unset;
+    &-list {
+      @include scrollSnap;
     }
     &-list::-webkit-scrollbar {
       display: none;

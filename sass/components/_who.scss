@@ -1,10 +1,7 @@
-.who {
-  padding-bottom: var(--section-spacing);
-
+.flayout {
+  padding: 117px 20px 89px;
   &-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenter;
     gap: 0 87px;
   }
   &-img {

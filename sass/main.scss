@@ -1,9 +1,17 @@
-@import "_settings";
-@import "_variables";
-@import "_global";
-@import "_header";
-@import "_service";
-@import "_who";
-@import "_review";
-@import "_blog";
-@import "_newsletter";
+@import "base/utilities";
+@import "base/settings";
+@import "base/typography";
+
+@import "abstract/mixins";
+
+@import "components/button";
+@import "components/blog";
+@import "components/service";
+@import "components/who";
+@import "components/review";
+@import "components/newsletter";
+
+@import "layout/header";
+@import "layout/navigation";
+
+@import "page/home";

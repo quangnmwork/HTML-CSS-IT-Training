@@ -1,16 +1,14 @@
 .review {
+  margin-bottom: var(--section-spacing);
   &-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--section-spacing);
+    @include flexCenter;
   }
   &-content {
     width: 100%;
     max-width: 400px;
   }
   &-number {
-    color: $gray-blur;
+    color: var(--gray-blur);
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -19,7 +17,7 @@
   &-count {
     font-weight: 600;
     font-size: 25px;
-    color: $third-color;
+    color: var(--third-color);
   }
   &-list {
     max-width: 523px;
@@ -69,7 +67,7 @@
     top: 25px;
   }
   &-name {
-    color: $gray-dark;
+    color: var(--gray-dark);
     font-weight: 500;
     font-size: 13px;
     margin-bottom: 5px;
@@ -77,7 +75,7 @@
   &-job {
     font-weight: 500;
     font-size: 7px;
-    color: $gray-blur-dark;
+    color: var(--gray-blur-dark);
     display: block;
     margin-bottom: 8px;
   }
