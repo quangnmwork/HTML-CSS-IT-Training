@@ -3,14 +3,11 @@
     padding: 77px 20px 116px;
     background-color: var(--gray-lighter);
     border-radius: 67px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    @include flex($justify: center, $align: center);
   }
   &-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($justify: space-between, $align: center);
     max-width: 796px;
   }
   &-content {
@@ -33,10 +30,9 @@
     max-width: 338px;
   }
   &-form {
+    @include flex($justify: space-between);
     background: #ffffff;
     border-radius: 26.5px;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     max-width: 373px;
   }
@@ -68,9 +64,7 @@
   }
   @media screen and (max-width: 767px) {
     &-main {
-      flex-direction: column;
-      gap: 35px;
-      align-items: stretch;
+      @include flex($direction: column, $gap: 35px);
     }
     &-content {
       text-align: center;

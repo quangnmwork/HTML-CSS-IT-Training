@@ -11,12 +11,11 @@
   padding: 30px 20px 40px;
   max-width: 1160px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
+
+  @include flex($align: center);
 }
 .auth {
-  display: flex;
-  gap: 0 13px;
+  @include flex($gap: 0 13px);
   margin-left: 100px;
   @media screen and (max-width: 1023px) {
     .auth {
@@ -28,9 +27,7 @@
 }
 .menu {
   margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 0 38px;
+  @include flex($align: center, $gap: 0 38px);
   list-style: none;
   &-link {
     color: inherit;
@@ -65,7 +62,7 @@
       right: 0;
       bottom: 0;
       width: 300px;
-      flex-direction: column;
+      @include flex($direction: column);
       background-color: white;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       z-index: 99999;

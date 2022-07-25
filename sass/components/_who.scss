@@ -1,7 +1,7 @@
 .flayout {
   padding: 117px 20px 89px;
   &-container {
-    @include flexCenter;
+    @include flex($justify: center, $align: center);
     gap: 0 87px;
   }
   &-img {
@@ -20,13 +20,11 @@
   @media screen and (max-width: 1023px) {
     &-container {
       gap: 30px;
-      flex-direction: column;
+      @include flex($direction: column);
     }
     &-img {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex($justify: center, $align: center);
     }
   }
 }

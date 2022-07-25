@@ -18,9 +18,7 @@
     border: 2px solid #edeff7;
     border-radius: 13px;
     padding: 40px 45px 87px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($direction: column, $align: center);
     text-align: center;
     transition: all 0.2s linear;
     &:hover {
@@ -38,9 +36,7 @@
     width: 67px;
     height: 67px;
     border-radius: 100rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex($justify: center, $align: center);
     background-color: #f4f7ff;
     margin-bottom: 26px;
     transition: all 0.2s linear;
