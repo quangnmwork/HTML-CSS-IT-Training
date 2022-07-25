@@ -20,10 +20,8 @@
   }
   &-list {
     max-width: 523px;
-    grid-gap: 20px;
-    display: grid;
+    @include grid($grid-template-columns: 1fr 1fr, $grid-gap: 20px);
     flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     position: relative;
   }
@@ -86,7 +84,7 @@
   &-quote img {
     margin-left: auto;
   }
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     &-container {
       @include flex($direction: column, $gap: 35px);
     }
@@ -97,9 +95,9 @@
       padding-left: 0;
     }
   }
-  @media screen and (max-width: 767px) {
+  @include respond($breakpoint: "sm") {
     &-list {
-      grid-template-columns: 1fr;
+      @include grid($grid-template-columns: 1fr);
       max-width: 100%;
     }
     &-bg {

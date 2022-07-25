@@ -1,19 +1,3 @@
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1170px;
-  padding: 0 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.heading-center {
-  text-align: center;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -74,8 +58,6 @@ img {
   --third-color: #f4a11a;
   --bg-gradient: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
   --bg-secondary: #f4f6fd;
-  --res-land: 1023px;
-  --res-port: 767px;
 }
 @media screen and (max-width: 1279px) {
   :root {
@@ -86,6 +68,22 @@ img {
   :root {
     --section-spacing: 50px;
   }
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-center {
+  text-align: center;
 }
 
 .global-caption {
@@ -120,7 +118,7 @@ img {
   color: var(--gray-blur);
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .global-heading--big {
     font-size: 30px;
   }
@@ -152,7 +150,7 @@ img {
   color: var(--primary-color);
   border: 2px solid var(--gray-light);
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .button {
     padding: 10px 20px;
     font-size: 14px;
@@ -164,8 +162,13 @@ img {
 }
 .blog-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 34px;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  grid-template-rows: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: none;
 }
 .blog-content {
   padding: 33px 23px;
@@ -204,7 +207,7 @@ img {
 .blog-item:hover .blog-title {
   color: var(--third-color);
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .blog-list {
     display: grid;
     justify-content: flex-start;
@@ -242,8 +245,13 @@ img {
 }
 .service-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 33px;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  grid-template-rows: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas: none;
 }
 .service-item {
   border: 2px solid #edeff7;
@@ -283,7 +291,7 @@ img {
 .service-title {
   margin-bottom: 19px;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .service {
     padding-bottom: 50px;
   }
@@ -338,7 +346,7 @@ img {
 .flayout .global-text {
   margin-bottom: 37px;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .flayout-container {
     gap: 30px;
     display: flex;
@@ -381,10 +389,15 @@ img {
 }
 .review-list {
   max-width: 523px;
-  grid-gap: 20px;
   display: grid;
-  flex-wrap: wrap;
+  grid-gap: 20px;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  grid-template-rows: none;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: none;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
 }
@@ -447,7 +460,7 @@ img {
 .review-quote img {
   margin-left: auto;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .review-container {
     display: flex;
     justify-content: flex-start;
@@ -462,9 +475,16 @@ img {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .review-list {
+    display: grid;
+    grid-gap: 0 0;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    grid-template-rows: none;
     grid-template-columns: 1fr;
+    grid-template-areas: none;
     max-width: 100%;
   }
   .review-bg {
@@ -529,7 +549,7 @@ img {
   background-color: transparent;
   width: 100%;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 767px) {
   .newsletter-heading {
     font-size: 30px;
     line-height: 1.5;
@@ -540,7 +560,7 @@ img {
     border-radius: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .newsletter-main {
     display: flex;
     justify-content: flex-start;
@@ -581,17 +601,17 @@ img {
   align-items: center;
   gap: 0 36px;
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .header-image {
     transform: scale(1.2);
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1023px) {
   .header-content {
     max-width: 496px;
   }
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .header-main {
     display: flex;
     justify-content: flex-start;
@@ -599,7 +619,7 @@ img {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .header-heading {
     font-size: 35px;
   }
@@ -635,7 +655,7 @@ img {
   margin-left: auto;
   display: none;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .toggle {
     display: block;
   }
@@ -657,7 +677,7 @@ img {
   gap: 0 13px;
   margin-left: 100px;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .auth .auth {
     padding-left: 15px;
     margin-left: 0;
@@ -698,7 +718,7 @@ img {
 .menu-link:hover:before {
   width: 100%;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .menu {
     margin: 0 auto;
     position: fixed;

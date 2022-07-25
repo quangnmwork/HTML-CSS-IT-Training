@@ -3,9 +3,7 @@
     margin-bottom: 78px;
   }
   &-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 34px;
+    @include grid($grid-template-columns: repeat(3, 1fr), $grid-gap: 34px);
   }
   &-content {
     padding: 33px 23px;
@@ -43,7 +41,7 @@
       }
     }
   }
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     &-list {
       @include scrollSnap;
     }

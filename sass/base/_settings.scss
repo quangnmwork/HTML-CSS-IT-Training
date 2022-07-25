@@ -36,8 +36,11 @@ img {
   display: block;
   max-width: 100%;
 }
-$res-land: 1023px;
-$res-port: 767px;
+$breakpoints: (
+  "sm": 767px,
+  "md": 1023px,
+  "lg": 1280px,
+) !default;
 :root {
   --section-spacing: 140px;
   --gray: #635f85;
@@ -51,8 +54,6 @@ $res-port: 767px;
   --third-color: #f4a11a;
   --bg-gradient: linear-gradient(103.38deg, #f67102 5.1%, #f4a91e 86.29%);
   --bg-secondary: #f4f6fd;
-  --res-land: 1023px;
-  --res-port: 767px;
 
   @media screen and (max-width: 1279px) {
     --section-spacing: 70px;

@@ -1,7 +1,7 @@
 .toggle {
   margin-left: auto;
   display: none;
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     & {
       display: block;
     }
@@ -17,7 +17,7 @@
 .auth {
   @include flex($gap: 0 13px);
   margin-left: 100px;
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     .auth {
       padding-left: 15px;
       margin-left: 0;
@@ -54,7 +54,7 @@
       width: 100%;
     }
   }
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     & {
       margin: 0 auto;
       position: fixed;

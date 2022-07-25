@@ -51,7 +51,7 @@
     background-color: transparent;
     width: 100%;
   }
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "sm") {
     &-heading {
       font-size: 30px;
       line-height: 1.5;
@@ -62,7 +62,7 @@
       border-radius: 20px;
     }
   }
-  @media screen and (max-width: 767px) {
+  @include respond($breakpoint: "sm") {
     &-main {
       @include flex($direction: column, $gap: 35px);
     }

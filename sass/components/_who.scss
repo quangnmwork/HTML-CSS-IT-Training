@@ -17,7 +17,7 @@
   .global-text {
     margin-bottom: 37px;
   }
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     &-container {
       gap: 30px;
       @include flex($direction: column);

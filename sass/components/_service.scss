@@ -10,9 +10,10 @@
     margin: 0 auto 32px;
   }
   &-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-gap: 33px;
+    @include grid(
+      $grid-template-columns: repeat(3, minmax(0, 1fr)),
+      $grid-gap: 33px
+    );
   }
   &-item {
     border: 2px solid #edeff7;
@@ -47,7 +48,7 @@
   &-title {
     margin-bottom: 19px;
   }
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     padding-bottom: 50px;
     &-header {
       margin-bottom: 33px;

@@ -17,22 +17,22 @@
     @include flex($align: center);
     gap: 0 36px;
   }
-  @media screen and (min-width: 1280px) {
+  @include respond($isMax: false, $breakpoint: "lg") {
     &-image {
       transform: scale(1.2);
     }
   }
-  @media screen and (min-width: 1024px) {
+  @include respond($isMax: false, $breakpoint: "md") {
     &-content {
       max-width: 496px;
     }
   }
-  @media screen and (max-width: 1023px) {
+  @include respond($breakpoint: "md") {
     &-main {
       @include flex($direction: column);
     }
   }
-  @media screen and (max-width: 767px) {
+  @include respond($breakpoint: "sm") {
     &-heading {
       font-size: 35px;
     }
